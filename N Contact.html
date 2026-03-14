@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title>Bloom Basket Contact</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                margin:0;
+                padding: 0;
+                background-image: url('https://img.freepik.com/free-vector/realistic-blurred-floral-background_52683-63510.jpg?w=2000');
+            }
+            .card {
+                border: 2px solid gray;
+                text-align:center ;
+                justify-content:center ;
+                margin: 55px;
+                padding: 25px;
+                height: 90%;
+                width: 35%;
+                margin-left: ;
+                border-radius: 70px;
+                margin-top: 2%;
+                background-color:;
+                
+            }
+            label {
+                font-size: 25px;
+                font-weight: bold;
+            }
+            #name,
+            #email,
+            #mobile {
+                border: 2px solid black;
+                border-radius: 9px;
+                padding: 5px;
+            }
+            #ones {
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 9px;
+            }
+            #button {
+                border: 2px solid rgb(20, 85, 20);
+                border-radius: 20px;
+                background-color: rgb(235, 98, 221);
+                font-size: 16px;
+                font-weight: bold;
+                color:black;
+                padding: 3px;
+                margin: 10px;
+                
+            }
+            #button:hover {
+                background-color: rgb(216, 121, 230);
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                
+            }
+            a:hover {
+                color: blue;
+            }
+            .information {
+                text-align: center;
+                justify-content: center;
+                border: 2px solid gray;
+                border-radius: 70px;
+                margin: 60px;
+                padding: 20px;
+                height: 90%;
+                width: 35%;
+                margin-top:-104vh; 
+                margin-left: 58%;
+                margin-bottom: 30px;
+                background-color: ;
+            
+                
+            }
+            .name {
+                font-size: 30px;
+                color: black;
+                font-weight: bold;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .info {
+                font-size: 20px;
+                color: black;
+                
+            }
+            .cont {
+                font-size: 25px;
+                color: black;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .footer {
+                height: 50px;
+                width: 50px;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: ;
+                margin-left: ;
+                
+            }
+            .social {
+                text-align: center;
+                font-size: 30px;
+                white-space: nowrap;
+                margin-bottom:20px ;
+                text-align: ;
+                margin-left: 160px;
+                color: black;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            .icons {
+                font-size: 30px;
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                margin-bottom: 140px;
+                bottom: 30px;
+                
+                margin-left:120px;
+                margin-top: 80px;
+                position: absolute;
+                color: blue;
+                
+            }
+            .icons:hover {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+
+            <div class="card">
+                <header><h1>Get in Touch</h1></header><br><br>
+            <label>Name : </label><br><br>
+            <input type="text" id="name" placeholder="Name" maxlength="50" required><br><br>
+            <label>E-Mail : </label><br><br>
+            <input type="text" id="email" placeholder="email" required><br><br>
+            <label>Mobile Number : </label><br><br>
+            <input type="text" id="mobile" placeholder="Mobile Number" maxlength="10" required><br><br>
+            <label >Comment : </label><br><br>
+            <input type="text" id="ones" rows="10" cols="10" placeholder="Send a Message" required><br><br>
+            <button type="button" onclick="sendmessage()" id="button"><a href="#">Send Message</a></button>
+            </div>
+        </form>
+            
+        <div class="Information">
+            <div class="name">Name</div>
+            <div class="info">Bloom Basket Pvt Ltd</div>
+            <div class="name">Address</div>
+            <div class="info">Bloom Basket,03-111, Third floor, WeWork Eleven West, Pancard Club Road, Baner, <br>Nandigama 521185,</div>
+            <div class="cont"><b>Telephone :</b> +91-9129989129</div>
+            <div class="footer">
+            <div class="social">
+                Follow Us 
+            </div>
+            <div class="icons">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"> <i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>  
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            
+            </div>
+        </div>
+
+            </div>
+            <script>
+
+
+                function sendmessage() {
+                    var name=document.getElementById("name").value;
+                    var email=document.getElementById("email").value;
+                    var mobile=document.getElementById("mobile").value;
+                    var comment=document.getElementById("ones").value;
+                    
+                    if(name=="" || email=="" || mobile=="" || comment=="") {
+                        alert("Please fill all the fields");
+                        return;
+                    }
+                    alert("Message Sent Successfully")
+                }
+
+                
+            </script>
+        
+    </body>
+</html>

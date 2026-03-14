@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <title>Payment</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .card {
+                text-align: ;
+                justify-content: center;
+                border: 4px solid  lavender;
+                border-radius: 30px;
+                height: 1100px;
+                width: 1255px;
+                background-image: url('https://jooinn.com/images/flowers-background-2.jpg');
+                
+                
+                
+            }
+            .arrange {
+                text-align: center;
+                border: 1px solid gray;
+                border-radius: 40px;
+                height: 850px;
+                width: 600px;
+                margin-left: 10px;
+                margin-top: 50px;
+                background-color: white;
+                
+            }
+            .buy {
+                
+                transform: translateY(-850px);
+                border: 1px solid gray;
+                border-radius: 40px;
+                height: 850px;
+                width: 600px;
+                text-align: center;
+                margin-left: 650px;
+                background-color: white;
+                
+                
+                
+            }
+            header {
+                font-size: 50px;
+                color: black;
+                font-weight: ;
+                text-align: center;
+                font-family: Algerian;
+                margin-top: 50px;
+                text-align: center;
+                text-decoration:;
+            }
+            a {
+                
+                color: green;
+            }
+            a:hover {
+                color: blue;
+            }
+            h3 {
+                font-size: 23px;
+                font-weight: bold;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                text-align: center;
+                
+                
+            }
+            #biladd {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            #sign {
+                position: absolute;
+                top: 275px;
+                right: 690px;
+                padding: ;
+                font-size: 20px;
+            }
+            #email,
+            #country,
+            #fname,
+            #lname,
+            #address,
+            #city,
+            #state,
+            #pincode,
+            #phone,
+            #payment,
+            #shipping {
+                border-radius: 7px;
+                margin: 10px;
+                padding: 6px;
+            }
+            #address,
+            #phone,
+            #shipping,
+            #email {
+                width: 528px;
+                margin: 10px;
+            }
+            #save,
+            #messg,
+            #sameship,
+            #differ
+            {
+                text-align: left;
+                margin-left: -305px;
+                
+            }
+            #messg {
+                margin-left: -330px;
+            }
+            #sameship {
+                margin-left: -335px;
+            }
+            #paysecu {
+                margin-top: -43px;
+            }
+            #product,
+            #price,
+            #total {
+                text-align: left;
+                margin-left: 440px;
+            }
+            select {
+                border-radius: 7px;
+                border: 2px solid;
+                padding: 4px;
+                margin: 12px;
+            }
+            #product,
+            #price,
+            #total {
+                font-size: 50px;
+                font-weight: bold;
+            }
+            span {
+                color: green;
+                font-weight: bold;
+                font-size: 10px;
+            }
+            #buy {
+                font-size: 20px;
+                font-weight: bold;
+
+            }
+
+            button {
+                border: 2px solid green;
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                background-color: ;
+                color: black;
+                width: 160px;
+            }
+            button:hover {
+                background-color: greenyellow;
+            }
+            #pay a {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 17px;
+            }
+            #pay a:hover {
+                color: blue;
+            }
+            #store a{
+                text-decoration: none;
+                font-size: 80px;
+                font-weight: bold;
+            }
+            
+             
+            
+        </style>
+    </head>
+    <body>
+        <div class="card">
+        <header>Bloom Basket</header><br><br>
+        <hr>
+        <div class="arrange">
+        <h3>Contact</h3>
+        <a href="N Login.html" id="sign">Sign in</a>
+        <input type="text" id="email" placeholder="Email" required><br><br>
+        <h3>Delivery</h3>
+        <select id="country" required>
+            <option>country/region</option>
+            <option checked >India</option>
+            
+        </select>
+        <input type="text" id="fname" placeholder="First Name" required>
+        <input type="text" id="lname" placeholder="Last Name" required><br><br>
+        <input type="text" id="address" placeholder="Address" required><br><br>
+        <input type="city" id="city" placeholder="City" required>
+        <select id="state" required>
+            <option>State</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+            <option>Tamil Nadu</option>
+            <option>Kerala</option>
+        </select>
+        <input type="pincode" id="pincode" placeholder="Pincode" required><br><br>
+        <input type="text" id="phone" placeholder="Phone"  maxlength="10"><br><br>
+        <input type="checkbox" id="save">Save This Information For Next Time<br><br>
+        <input type="checkbox" id="messg">Get Order Updates On WhatsApp<br><br>
+        <h3>Shipping Method</h3>
+        <input type="text" id="shipping" placeholder="Enter Your Shipping Address  To View Available Shipping Methods."><br><br>
+        </div>
+        <div class="buy">
+        <h3>Payment </h3><br>
+        <p id="paysecu">All Transactions Are Secure And Encrypted</p><br>
+        <h3 id="biladd">Billing Address</h3><br>
+        <input type="radio" name="billing" id="sameship" >
+        <label for="same">Same As Shipping Address</label><br><br>
+        <input type="radio" name="billing" id="differ">
+        <label for="differ">Use a Different Billing Address</label><br><br>
+      <!----  <select id="country" required>
+            <option>country/region</option>
+            <option checked >India</option>
+            
+        </select>
+        <input type="text" id="fname" placeholder="First Name" required>
+        <input type="text" id="lname" placeholder="Last Name" required><br><br>
+        <input type="text" id="address" placeholder="Address" required><br><br>
+        <input type="city" id="city" placeholder="City" required>
+        <select id="state" required>
+            <option>State</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+            <option>Tamil Nadu</option>
+            <option>Kerala</option>
+        </select>
+        <input type="pincode" id="pincode" placeholder="Pincode" required><br><br>
+        <input type="text" id="phone" placeholder="Phone" maxlength="10" required><br><br> -->
+        <h3>Product Details</h3>
+        <p><b>Product : </b> <span id="product"></span></p>
+        <p><b>Price : </b> <span id="price"></span></p>
+        <p><b>Total : </b><span id="total"></span></p>
+        <br><br>
+        <label id="buy">Select Payment Method : </label>
+        <select id="payment">
+            <option value="">Choose Payment Options</option> 
+            <option>Cash On Delivery</option>
+            <option>Card</option>
+            <option>UPI</option>
+            <option>PhonePe</option>
+            <option>GPay</option>
+            <option>Paytm</option>
+            
+            
+                
+            
+        
+        </select><br><br>
+        <button onclick="pay()" id="pay"><a href="N Payment Success.html">Pay Now</a></button><br><br>
+        <a href="Nursery.html" id="store"><h4><b>Back To Store</b></h4></a>
+        </div>
+        </div>
+    </body>
+</html>

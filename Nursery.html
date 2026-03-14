@@ -1,0 +1,1279 @@
+<html>
+    <head>
+        <title>Bloom Basket</title>
+        <!--encoding purpose & supports all languages and symbols-->
+        <meta charset="UTF-8">
+        <!--makes the website Mobile friendly , without this mobile view breaks-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--version of internet standards explore-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--appears on browser tab & google search results-->
+        <link href="https://cdn.jsdeliv.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                overflow-x: hidden;
+            }
+            .stic {
+                position: ;
+                top: 0px;
+                padding: 30px;
+                z-index: 1000;  
+                background: gainsboro;
+                
+            }
+            .navbar {
+                display: flex;
+                gap:30px ;
+                justify-content: space-between;
+                position:;
+                color: black;
+                text-decoration:none;
+                font-weight: black;
+                border: ;
+                top: 20px;
+                bottom: 30px;
+                font-size: 15px;
+                overflow: visible;
+                z-index: 1000;
+                overflow: visible;
+                padding: ;
+                
+            }
+            .men {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                text-decoration: none;
+                margin-right: 50px;
+                position:relative;
+                padding: 20px;
+                top: 20px;
+                overflow: visible;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            :hover {
+                color:blue;
+
+            }
+            #eff {
+                text-decoration: none;
+            }
+            #ico {
+                font-size: 30px;
+            }
+            #tit {
+              font-family: Edwardian Script ITC;
+              font-size: 60px;
+              gap: 30px;
+              bottom: 60px;
+              justify-content: center;
+              text-align:center;
+              padding: 30px;
+              position:relative;
+              margin-right: 20px;
+            }
+            #log {
+              height: 120px;
+              width: 150px;
+              border-radius: 120px;
+              border: ;
+              padding: ;
+              margin-right: 20px;
+              top: 60px;
+              margin-left: 20px;
+              
+            }
+            .dropdown {
+                position: relative;
+            }
+            .dropdown::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                background: white;
+                top: 100%;
+                left: 0;
+                min-width: 220px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                border-radius: 5px;
+                z-index: 1000;
+                padding: 5px 0;
+            }
+            .dropdown-menu a {
+                display: block;
+                padding: 10px 15px;
+                color: black;
+            }
+            .dropdown-menu a:hover {
+                background-color: #f2f2f2;
+                color: green;
+            }
+            .dropdown:hover .dropdown-menu ,
+            .dropdown-menu:hover {
+                display: block;
+            }
+         /*   #tit {
+              font-family: Edwardian Script ITC;
+              font-size: 60px;
+              gap: 30px;
+              bottom: 60px;
+              justify-content: center;
+              text-align:center;
+              padding: 30px;
+              position:relative;
+              margin-right: 20px;
+            }
+            #log {
+              height: 120px;
+              width: 150px;
+              border-radius: 120px;
+              border: ;
+              padding: ;
+              margin-right: 20px;
+              top: 60px;
+              
+            }     */
+            marquee {
+                direction: right;
+                border: 1px solid rgb(235, 31, 31);
+                color:blue;
+                border-radius: 50px;
+                size: ;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 17px;
+                margin-bottom: 1%;
+                margin-top: -100px;
+                
+                
+                
+            
+            }
+              .head {
+                height: 90%;
+                width: 100%;
+                background-image:url('https://png.pngtree.com/background/20250106/original/pngtree-beautiful-nature-with-flowers-wallpaper-picture-image_15303627.jpg');
+                background-position:bottom;
+                margin-bottom: 100px;
+                margin-top: -60px;
+                
+            }
+            .hero-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 40px 60px;
+            }
+            .hero-text {                  
+                max-width: 800px;
+                position: absolute;              
+                top: 180px;
+                right: -60px;
+                text-align: left;
+                margin-right: 160px;
+                margin-top: 40px;
+            }
+            .small-text {
+                color:  rgb(245, 245, 245);
+                font-size: 30px;
+                margin-bottom: 10px;
+                margin-left: 110px;
+                font-family:Lucida Calligraphy;
+                font-weight: bold;
+            }
+            .hero-text h1 {
+                font-size: 30px;
+                color: rgb(0, 4, 255);
+                margin-bottom: 20px;
+                font-family:Lucida Calligraphy;
+                margin-left: 80px; 
+                font-weight: bold;    
+            }
+            .tags {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+            .tags span {
+                color: blueviolet;
+                padding: 6px 30px;
+                border-radius: 14px;
+                font-size: 18px;
+                background: white;
+                margin-left: 260px;
+                font-family:Lucida Calligraphy;
+                font-weight: bold;
+                position: relative;
+                display: inline-block;
+                transform:skew(-20deg);
+                clip-path: polygon(
+                    9% 11%,
+                    100% 14%,
+                    91% 100%,
+                    0% 100%                );
+            }
+            .tags span::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -20px;
+                right: 20px;
+                bottom: 0;
+                background: white;
+                border-radius: 14px;
+                transform: skew(-20deg);
+                z-index: -1;
+            }
+            .arrange {
+                display: flex;
+                gap: 15px;
+                justify-content: flex-start;
+                padding: 30px;
+            }
+            .prod-card {
+                width: 150px;
+                height: 150px;       
+                border-radius: 850%;
+                padding: ;
+                background:;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                font-family: Arial,sans-serif;
+                border: 3px solid gray;
+                display: ;
+                margin-top: -80px;
+                margin-left: 3px;
+            
+        
+            }
+            .prod-img {
+                position:;
+                background: ;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: auto;
+                border: ;
+                padding: ;
+                text-align: center;
+                margin-bottom: ;
+                padding: ;  
+                display: flex;            
+            }
+            .prod-img img {
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+                margin-bottom:  ;
+                display: block;
+                border-radius: 50%;
+                padding: ;
+            }
+            .descr {
+                text-align: center;
+                margin-top: 25px;     
+            }
+            .subtext {
+                font-size: 20px;
+                color: #2e7d32;
+                margin-bottom: 8px;
+                margin-top: ;
+            }   
+            .price {
+                font-size: 16px;
+                margin-top: 3px;
+            }
+            .price .new {
+                color: green;
+                font-weight: bold;
+            }
+            .tag {
+                text-align: center;
+                color: green;
+                font-weight: bold;
+                font-size: 30px;
+                margin-top: 120px;
+            }
+            #secon {
+                margin-top: 60px;
+            }
+            #three {
+                margin-top: 60px;
+            }
+            .below-arrang {                                                             
+                display:flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .below {
+                background-image:url('');    display:flex;
+                gap: 40px;                      
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 60vh;
+                width: 100vw;
+                margin-top: 60px;
+                background-color: ;
+            }
+            .view {
+                width: 250px;       
+                border-radius: 10px;
+                padding: 5px;
+                background:;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                font-family: Arial,sans-serif;
+                border: 2px solid gray;
+                display: grid;
+            }
+            .view-img {
+                position:relative;
+                background: ;
+                border-radius: 15px;
+                padding: auto;
+                text-align: center;
+                margin-bottom: 5px;
+                padding: 0px;              
+            }
+             .view-img img {
+                width: 100%;
+                height: 250px;
+                object-fit:cover;
+                margin-bottom: 10px ;
+                display: block;
+                border-radius: 8px;
+            }           
+            .about {
+                text-align: center;
+                margin-top: 2px;     
+            }
+            .img-name {
+                font-size: 20px;
+                color: #2e7d32;
+                margin-bottom: 2px;
+                margin-top: 0px;
+            }      
+            .cost {
+                font-size: 16px;
+                margin-top: 8px;
+            }
+            .cost .newcost {
+                color: green;
+                font-weight: bold;
+            }
+            #onclick {
+                background-color:#08820e;
+                margin-bottom: 8px;
+                margin-top: 0px;
+                color: white;
+                border-radius: 7px;
+                border: none;
+                padding: 8px; 
+                font-weight: bold; 
+            }
+            #onclick:hover {
+                background-color: rgb(33, 217, 33);
+            }  
+            .enter {
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                
+                
+                margin-top: 60px;
+                font-size: 0px;
+                padding: 15px;
+            }
+            #radi {
+                border-radius: 12px;
+                border: 2px solid #08820e;
+                font-weight: bold;
+                background-color: #08820e;
+                color: white;
+                padding: 5px;
+                font-size: 20px;
+                height: 40px;
+                width: 220px;
+            }
+            #radi a {
+                text-decoration: none;
+                color: white;
+            }
+            #radi a:hover {
+                color:rgb(238, 39, 39);
+            }
+            .footer {
+                height: 50px;
+                width: 100%;
+                padding: 60px 0 40px;
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 420px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                
+                
+            }
+            .par {
+                font-size: 18px;
+                color: blueviolet;
+                font-weight: bold;
+                text-align: center;
+                white-space: nowrap;
+                margin-left: -780px;
+                margin-top: 25px;
+                
+            }
+            .social {
+                text-align: center;
+                font-size: 30px;
+                white-space: nowrap;
+                margin-bottom: 35px;
+                text-align: center;
+                margin-left: -65%;
+                margin-top: -50px;
+                color: rgb(5, 125, 5);
+            }
+            .icons {
+                font-size: 30px;
+                display: flex;
+                gap: 35px;
+                justify-content: space-between;
+                margin-bottom: -608vh;
+                bottom: 30px;
+                
+                margin-left: 60px;
+                margin-top: 15px;
+                position: absolute;
+            }
+            .pvt {
+                margin-top: 35px;
+                padding-bottom: 30px;
+                text-align: center;
+                font-size: 15px;
+                color: #282828;
+                letter-spacing: 1px;
+                word-spacing: 12px;
+                
+            }
+            .pvt span {
+                color: #aaa;
+            }
+
+           
+
+
+
+
+
+
+
+     /*   #col {
+                
+            }
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 80px;
+    height: 20px;
+    width: 20px;
+}
+.shortlist {
+    display: flex;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+.button {
+    border: 2x solid black;
+    border-radius: 30px;
+    background-color: green;
+}
+#cart {
+    background-color: red;
+}
+a:hover {
+    
+}
+.about {
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact {
+    font-size: 50px;
+}
+.faqs {
+    font-size: smaller;
+}
+.social {
+    height: 40px;
+    width: 40px;
+}       */
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header" id="stic">
+            
+            <div class="navbar">
+        <img src="N logo.jpeg" alt="Logo" id="log">
+        <h2 id="tit"><b>Bloom Basket</b></h2>
+        <div class="effect">
+        <div class="men" >
+        <a href="Nursery.html"><i class="fa fa-home" id="ico"></i><id="name">Home</id></a>
+         <!---- <a href="#"><i class="fa fa-tree" id="ico"></i>Plants</a>   -->
+        <div class="dropdown">
+            <a href="#">
+                <i class="fa fa-tree" id="ico"></i>Plants
+            </a>
+            <div class="dropdown-menu">
+                <a href="N Flower Plants.html">Flower</a>
+                <a href="N Fruit plants.html">Fruit</a>
+                <a href="N Herbal plants.html">Herbal</a>
+                <a href="N Hanging  and Creeper.html">Hanging & Creeper</a>
+                <a href="#">Indoor</a>
+                <a href="#">Air Purifiers</a>
+            </div>
+        </div>
+        <a href="N Bouquates.html"><i class="fa fa-gift" id="ico"></i>Bouquets</a>
+        <!--
+        <a href="#"><i class="fa fa-snowflake-o"></i>Seasional</a>
+        -->
+     <!---   <a href="#"><i class="fa fa-info-circle" id="ico"></i>About Us</a>   -->
+     <div class="dropdown">
+            <a href="#">
+                <i class="fa fa-info-circle" id="ico"></i>About Us
+            </a>
+            <div class="dropdown-menu">
+                <a href="N About Us.html">About Us</a>
+                <a href="N Contact.html">Contact</a>
+                
+            </div>
+            </div>
+       <!--- <a href="N Login.html"><i class="fa fa-user" id="ico"></i>My Account</a>   -->
+       <div class="dropdown">
+            <a href="#">
+              <i class="fa fa-user" id="ico"></i>My Account  
+            </a>
+            <div class="dropdown-menu">
+                <a href="N Login.html">Login</a>
+                <a href="N Register.html">Register</a>
+                
+            </div>
+            </div>
+        </div>
+        
+        <!--
+        <a href="#"><i class="fa fa-heart"></i>Whishlist</a>
+        <a href="#"><i class="fa fa-shopping-cart"></i>Cart</a><br><br>
+            -->
+
+        </div>
+        </div>
+</div>
+
+<marquee scrollamount="12px;" direction="" loop=";"  style="border: ; border-radius:40px; background-color: ;">    Flowering Plants &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hanging & Creepers Plants  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Indoor Plants    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Air Purifiers    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Home Decors  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     Herbal Plants    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Fruit Plants   </marquee>
+
+
+<div class="head">
+            <section class="hero">
+            <div class="hero-content">
+            <div class="hero-text">
+                <p class="small-text">Where Every Home Blooms Beautifully</p>
+                <h1>Elevate Your Home with Natural Elegance</h1>
+                <div class="tags">
+                    <span>A Touch of Nature for Every Day</span>
+                </div>
+        </div>
+        </div>
+    </div>         
+</section>
+<div class="arrange">
+<div class="prod-card">
+            <div class="prod-img">
+            <a href="N Flower Plants.html"><img src="https://i0.wp.com/youmeandtrends.com/wp-content/uploads/2016/06/yellow-rose-beautiful-images.jpg?ssl=1" alt="Flowers"> </a>   
+
+        
+        </div>   
+        <div class="descr">
+            <div class="subtext"> Flower Plants</div>
+            
+           
+              <div class="price">
+                <span class="new"></span>
+                </div>
+                </div>
+                </div>  
+                <div class="prod-card">
+            <div class="prod-img">
+          <a href="N Fruit plants.html">  <img src="https://img.freepik.com/premium-photo/red-apples-tree-with-water-droplets-them_927923-306.jpg" alt="fruits">   </a> 
+
+        
+        </div>   
+        <div class="descr">
+            <div class="subtext"> Fruit Plants</div>
+            
+           
+            <div class="price">
+               <span class="new"></span>
+                </div>
+                </div>
+                </div>   
+                <div class="prod-card">
+            <div class="prod-img">
+          <a href="N Hanging  and Creeper.html">  <img src="https://i.etsystatic.com/23778625/r/il/632e75/3743425672/il_570xN.3743425672_99uj.jpg" alt="Hanging & Creeper">  </a>  
+
+        
+        </div>   
+        <div class="descr">
+            <div class="subtext"> Hanging & Creepers</div>
+            
+           
+            <div class="price">
+                <span class="new"></span>
+                
+                </div>
+                </div>
+                </div>
+                <div class="prod-card">
+            <div class="prod-img">
+       <a href="#">     <img src="https://cms.interiorcompany.com/wp-content/uploads/2024/01/bromeliad-flower-plants-for-home.jpg" alt="Indoor"></a>    
+
+        
+        </div>   
+        <div class="descr">
+            <div class="subtext"> Indoor Plants</div>
+            
+           
+            <div class="price">
+                <span class="new"></span>
+                </div>
+                </div>
+                </div>
+                <div class="prod-card">
+            <div class="prod-img">
+      <a href="N Herbal plants.html"> <img src="https://www.gardeningknowhow.com/wp-content/uploads/2017/05/oregano-variety.jpg" alt="Herbal"> </a>   
+
+        
+        </div>   
+        <div class="descr">
+            <div class="subtext"> Herbal Plants</div>
+            
+           
+            <div class="price">
+                <span class="new"></span>
+                </div>
+                </div>
+                </div>
+                 <div class="prod-card">
+            <div class="prod-img">
+      <a href="#">      <img src="https://r3c5q8u7.rocketcdn.me/wp-content/uploads/2019/10/Dicksonia-antarctica_12.jpg" alt="Air Purifiers"> </a>   
+
+        
+        </div>   
+        <div class="descr">
+            <div class="subtext"> Air Purifiers</div>
+            
+           
+            <div class="price">
+                <span class="new"></span>
+                </div>
+                </div>
+                </div>
+                 <div class="prod-card">
+            <div class="prod-img">
+    <a href="N Bouquates.html">        <img src="https://i.pinimg.com/originals/48/ef/29/48ef2904ba3f23d825a8217eeaec88e3.jpg" alt="Bouquets">    </a>
+
+        
+        </div>   
+        <div class="descr">
+            <div class="subtext"> Bouquets</div>
+            
+           
+            <div class="price">
+                <span class="new"></span>
+                </div>
+                </div>
+                </div>
+
+
+                </div>
+
+                <div class="tag">Dive Into a Garden of Vibrant Blooms</div>
+                <div class="below-arrang">
+                <div class="below">
+        <div class="view">
+            <div class="view-img">
+            <img src="https://jooinn.com/images/red-rose-143.jpg" alt="Rose">
+
+        
+        </div> 
+        <div class="about">
+            <div class="img-name"> Red Rose</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.159.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+               <a href="N Payment.html"> <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://images.pexels.com/photos/635529/pexels-photo-635529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sunflower">
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name"> Sunflower</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.179.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+              <a href="N Payment.html">  <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>
+            <div class="view">
+            <div class="view-img">
+            <img src="https://peppyflora.com/wp-content/uploads/2021/03/Mogra-Beli-Flower-Jasminum-Sambac-3x4-Product-Peppyflora-01-a-Moz.jpg" alt="jasmin">
+
+        
+        </div>    
+        <div class="about">
+            <div class="img-name"> Jasmin</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.99.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/paradiso-pink-mum-fall-flower-proven-winners_14469.jpg" alt="chrysanthemum">
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name"> Chrysanthemum</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.120.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>       
+            
+            
+
+            </div>
+            </div>
+            <div class="enter">
+                <button onclick="view()" id="radi"><a href="N Flower Plants.html">View All</a></button>
+            </div>
+
+
+                <div class="tag" id="secon">Experience The Joy of Fresh Fruit Plants</div>
+                <div class="below-arrang">
+                <div class="below">
+        <div class="view">
+            <div class="view-img">
+            <img src="https://m.media-amazon.com/images/I/71i-Nyc72mL._AC_.jpg" alt="Barbados Cherry">
+
+        
+        </div> 
+        <div class="about">
+            <div class="img-name"> Barbados Cherry</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.259.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+               <a href="N Payment.html"> <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://img.freepik.com/premium-photo/closeup-star-gooseberry-fruit-fresh-star-gooseberry-growth-branch-nature-green-background_653449-3970.jpg?w=2000" alt="Star Goosberry">
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name"> Star Goosberry</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.279.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+              <a href="N Payment.html">  <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>
+            <div class="view">
+            <div class="view-img">
+            <img src="https://img2.exportersindia.com/product_images/bc-full/dir_184/5509014/madras-thorn-fruit-1519639701-3680531.jpeg" alt="Madras Thorn">
+
+        
+        </div>    
+        <div class="about">
+            <div class="img-name"> Madras Thorn(kodukka Puli)</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.199.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.ZxAnQPE5bi6AYcU0-Y5g1QHaE9?pid=Api&P=0&h=180" alt=" Guava">
+
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name">  Guava</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.269.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>       
+            
+            
+
+            </div>
+            </div>
+            <div class="enter">
+                <button onclick="view()" id="radi"><a href="N Fruit plants.html">View All</a></button>
+            </div>
+
+            <div class="tag" id="three">Experience Wellness Through Homegrown Herbs</div>
+                <div class="below-arrang">
+                <div class="below">
+        <div class="view">
+            <div class="view-img">
+            <img src="https://lzd-img-global.slatic.net/g/p/dc7a878c4dc2089954d14bd0ef5a0c16.jpg_720x720q80.jpg_.webp" alt="insulin">
+
+        
+        </div> 
+        <div class="about">
+            <div class="img-name"> Insulin Plant</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.299.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+               <a href="N Payment.html"> <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.4KdKiH24s_NxMe3D3_RSeQHaDk?pid=Api&P=0&h=180" alt="Vetiver">
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name">  Vetiver(Khus Khus) Plant</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.309.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+              <a href="N Payment.html">  <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>
+            <div class="view">
+            <div class="view-img">
+            <img src="https://i.etsystatic.com/18026585/r/il/db3713/1873385257/il_1140xN.1873385257_3x62.jpg" alt="Krishna Tulsi">
+
+        
+        </div>    
+        <div class="about">
+            <div class="img-name"> Holy Basil Plant- Krishna Tulsi Plant</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.230.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://i5.walmartimages.com/asr/ff314e3c-7b43-4659-8098-0e6dafc45018.7ef54b65ce9e66d478b7dcf555681869.jpeg" alt="lemon Grass">
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name"> Lemon Grass-Cymbopogon Citratus</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.390.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>       
+            
+            
+
+            </div>
+            </div>
+            <div class="enter">
+                <button onclick="view()" id="radi"><a href="N Herbal plants.html">View All</a></button>
+            </div>
+
+            <div class="tag" id="three">Embrace Every Occasion with the Beauty of Fresh Bouquets</div>
+                <div class="below-arrang">
+                <div class="below">
+        <div class="view">
+            <div class="view-img">
+            <img src="https://cdn11.bigcommerce.com/s-s00dfko9/images/stencil/357x476/products/275/1998/IMG-eba697da672d33a39e651822eddfcaf5-V-01-2__62117.1615578435.jpg?c=2" alt="Rose">
+
+        
+        </div> 
+        <div class="about">
+            <div class="img-name"> A Year of Rosy Love</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.2999.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+               <a href="N Payment.html"> <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://static-assets-prod.fnp.com/images/pr/l/v20250725122938/romantic-blush-rose-bouquet_4.jpg">
+
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name">  Romantic Blush Rose Buquets</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.1599.00</span>
+                 
+
+            </div><br>
+            <div class="click"> 
+              <a href="N Payment.html">  <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>
+            <div class="view">
+            <div class="view-img">
+            <img src="https://static-assets-prod.fnp.com/images/pr/l/v20250612185030/joyful-vibes-yellow-roses-bouquet-black-forest-cake_2.jpg">
+
+
+        
+        </div>    
+        <div class="about">
+            <div class="img-name"> Joyful Vibes Yellow Roses Bouquet</div>
+            
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.1699.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://static-assets-prod.fnp.com/images/pr/l/v20231108142230/pink-white-roses-butterscotch-cake_4.jpg">
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name">  Pink & White Roses</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.1549.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>       
+            
+            
+
+            </div>
+            </div>
+            <div class="enter">
+                <button onclick="view()" id="radi"><a href="N Bouquates.html">View All</a></button>
+            </div>
+
+
+
+
+            <div class="tag" id="three">Nature That Climbs, Beauty That Flows</div>
+                <div class="below-arrang">
+                <div class="below">
+        <div class="view">
+            <div class="view-img">
+            <img src="https://blozem.com/wp-content/uploads/2022/11/0584cb83-188b-4f57-a879-c68d432f2bb3.jpeg" alt="Rangoon Creeper">
+
+
+        
+        </div> 
+        <div class="about">
+            <div class="img-name"> Rangoon Creeper</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.159.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+               <a href="N Payment.html"> <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://m.media-amazon.com/images/I/61RVqqkkG4L._AC_.jpg" alt="Garlic Vine Creeper">
+
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name">  Garlic Vine Creeper</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.126.00</span>
+                 
+
+            </div><br>
+            <div class="click"> 
+              <a href="N Payment.html">  <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>
+            <div class="view">
+            <div class="view-img">
+            <img src="https://www.leaderplant.com/media/catalog/product/j/a/jasmin-etoile-tricolor.jpg" alt="Asiatic Jasmine Tricolor">
+
+
+        
+        </div>    
+        <div class="about">
+            <div class="img-name"> Asiatic Jasmine Tricolor</div>
+            
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.89.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>  
+            <div class="view">
+            <div class="view-img">
+            <img src="https://i.etsystatic.com/31560887/r/il/4837dd/4814328243/il_300x300.4814328243_focn.jpg" alt="Fairytale Cinderella Purslane Tiger Stripes ">
+
+
+        
+        </div>   
+        <div class="about">
+            <div class="img-name">  Fairytale Cinderella Purslane Tiger Stripes</div>
+            
+           
+            <div class="cost">
+                <span class="newcost">Rs.120.00</span>
+                 
+
+            </div><br>
+            <div class="click">
+            <a href="N Payment.html">    <button id="onclick">Place Order</button></a>
+            </div>
+            </div>
+            </div>       
+            
+            
+
+            </div>
+            </div>
+            <div class="enter">
+                <button onclick="view()" id="radi"><a href="N Hanging  and Creeper.html">View All</a></button>
+            </div>
+
+
+
+
+<!---
+<div class="main">
+<div class="categories">
+    <img src="" alt="Categ">
+    <a href="#"><p>Flower Plants</p></a>
+    </div>
+    <div class="categories">
+    <img src="" alt="Categ">
+    <a href="#" target="_blank"><p>Fruit Plants</p></a>
+    </div>
+</div>
+        </div>
+        <div class="shortlist">
+            <h1>Dive into Garden of Vibrant Blooms</h1>
+            <img src="" alt="img">
+            <p>fhgjhkmhj</p>
+            <p>$243</p>
+            <a href="#"><button id="cart">Add to Cart</button></a>
+            <a href="#"><button>View Product</button></a>
+        </div>
+        <div class="footer">
+            <div class="about">
+            <h1>About Us</h1>
+            <p>bvhgfghgchghg</p>
+            </div>
+            <div class="contact">
+            <h1>Get in Touch</h1>
+            <label>Mobile</label>
+            <p>+91 766453445768</p>
+            <label>E-Mail</label>
+            <p>ghfd@vgdhd</p>
+            <input type="text" name="mail" placeholder="Mail">
+            <label>Address</label>
+            <p>ghddhbchjbjfv<br>nbdgegfryfh<br>4356788</p>
+            <textarea rows="10" cols="10"></textarea>
+            </div>
+            <div class="faqs">
+            <h4>FAQ's</h4>
+            <h5>gvghhjhjkhbhgb</h5>
+            <p>vghfuhjgjhiuiuj</p>
+            </div>
+            <div class="social">
+            <h3>Follow Us</h3>
+            <a href="#">twitter</a>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">youtube</a>    -->
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social">
+                Follow Us On
+            </div>
+            <div class="par">
+                Your dream garden starts here — let's grow together and make every home bloom.
+            </div>
+            <div class="icons">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"> <i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>  
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+            
+            </div>
+        </div>
+        <hr>
+        <div class="pvt">
+            <span>|</span><i class="fa fa-copyright"> 2026, Bloom Basket Online Plants Pvt Ltd</i>
+            <span>|</span>Privacy Policy
+            <span>|</span>Refund Policy
+            <span>|</span>Shipping Policy
+            <span>|</span>Terms of Services
+            <span>|</span>Contact Information
+
+
+        </div>
+        
+        
+    </body>
+    
+</html>

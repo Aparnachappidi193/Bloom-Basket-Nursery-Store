@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>bloom Basket Login</title>
+        <style>
+            .body {
+                margin: 0px;
+                padding: 0px;
+                border: 2px solid rgb(230, 132, 181);
+                -webkit-box-shadow:0px 10px 49px-14px rgba(0,0,0,0.7);
+                -moz-box-shadow:0px 10px 49px-14px rgba(0,0,0,0.7);
+                box-shadow:0px 10px 49px-14px rgba(0,0,0,0.7);
+            }
+            .main {
+                padding: 2px;
+                margin-left: 400px;
+                margin-top: 80px;
+                text-align: center;
+                font-weight: bold;
+                border: 3px solid rgb(222, 110, 177);
+                height: 460px;
+                width: 450px;
+                border-radius: 60px;
+                background: white;
+                -webkit-box-shadow:0px 10px 49px-14px rgba(0,0,0,0.7);
+                -moz-box-shadow:0px 10px 49px-14px rgba(0,0,0,0.7);
+                box-shadow:0px 10px 49px-14px rgba(0,0,0,0.7);
+            }
+            #name,
+            #password,
+            #one {
+                border-radius: 50px;
+                margin: 6px;
+                padding: 6px;
+            }
+            #one:hover {
+                color: blue;
+            }
+            button {
+                background-color: rgb(234, 108, 211);
+            }
+            button:hover {
+                background-color: rgb(223, 147, 208);
+            }
+            #one a,
+            a  {
+                text-decoration: none;
+                color: black;
+            }
+            #one a:hover,
+            a:hover  {
+                color: blue;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body background="https://wallpapercrafter.com/desktop/106344-plants-flowers-macro-blurred.jpg">
+        
+        
+        <div class="main">
+            <h1>Login</h1><br><br>
+            <label >E-Mail : </label>
+            <input type="text" name="mail" id="name" placeholder="Mail" required><br><br>
+            <label >Password : </label>
+            <input type="password" name="password" id="password" placeholder="Password" maxlength="8" required><br><br>
+            <input type="checkbox">Remember Me<br>
+            <p>Forger Password</p>
+           <!-- <button id="one"><b><a href="Nursery.html">Login</a></b></button> -->
+            <button type="button" onclick="login()" id="one">Login</button>
+            <p> New Customer?<a href="N Register.html"> Create Your Account</a></p>
+            <p><a href="Nursery.html" target=" ">Return to store</a></p>
+            <p id="message" style="color: red;"></p>
+        </div>
+        
+        
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+            <script>
+                // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCRQbnNYIVypBLypUnyt5ZWUwuwoBiwQJ4",
+  authDomain: "freshbites-41c6c.firebaseapp.com",
+  databaseURL: "https://freshbites-41c6c-default-rtdb.firebaseio.com",
+  projectId: "freshbites-41c6c",
+  storageBucket: "freshbites-41c6c.firebasestorage.app",
+  messagingSenderId: "1064120450728",
+  appId: "1:1064120450728:web:80f0f73bd7c5eafb374c9d",
+  measurementId: "G-FVVM5XWDHK"
+};
+
+                firebase.initializeApp(firebaseConfig);
+                var database=firebase.database();
+                function login() {
+                    var name=document.getElementById("name").value;
+                    var password=document.getElementById("password").value;
+                    
+                    if(name=="" || password=="") {
+                        alert("Please fill all fields");
+                        return;
+                    }
+                    database.ref("registrations/"+name).once("value")
+                    .then(function(snapshot) {
+                        var found=false;
+                        snapshot.forEach(function(childSnapshot) {
+                            var data=childSnapshot.val();
+                            if (data.fname===name && data.password===password) {
+                                found=true;
+                                alert("Login Successful");
+                                window.location.href="Nursery.html";
+                            }
+                        });
+                        if (!found) {
+                            alert("Invalid name or password");
+                        }
+                        if(!userFound) {
+                            alert("Account not found.Please create your account.");
+                        }
+
+                    });
+                }
+
+                        
+            </script>
+
+        
+
+    </body>
+</html>
